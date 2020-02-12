@@ -39,7 +39,7 @@ values
     ('WC3 - New Years Cup - Grand Final [NE] Moon vs. Chaemiko [HU]
 ', 'https://www.youtube.com/watch?v=veZb6WJ8hM4', 'veZb6WJ8hM4', '2020-01-20', 1, 'ORCvNE', 'Cast'),
     ('StarCraft 2: VERY CLOSE Terran vs Protoss!', 
-    'https://www.youtube.com/watch?v=C6TuN1chfAo', 'C6TuN1chfAo', '2019-05-03', 2, 'ZvZ', 'First Person'),
+    'https://www.youtube.com/watch?v=C6TuN1chfAo', 'C6TuN1chfAo', '2019-05-03', 2, 'PvT', 'First Person'),
     ('A Cascade of Muta-ling-Bane! ZvZ',
     'https://www.youtube.com/watch?v=QQcOXVxQet0', 'QQcOXVxQet0', '2020-01-14', 2, 'ZvZ', 'First Person'),
     ('Smashing Cyclones! | Ladder Season 4 2019 #20',
