@@ -11,7 +11,7 @@ const db = knex({
 app.set('db', db)
 
 // test knex queries
-db.from('games').select('*')
+db.from('vods').select('*')
   .then(result => {
     console.log(result);
   })

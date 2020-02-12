@@ -13,12 +13,8 @@ const morganOption = (NODE_ENV === 'production')
   ? 'tiny'
   : 'common';
 
-app.use(morgan(morganOption))
-app.use(
-  cors({
-    origin: CLIENT_ORIGIN
-  })
-);
+app.use(morgan('dev'))
+app.use(cors());
 app.use(helmet())
 
 //use service router
@@ -49,6 +45,8 @@ app.get('/games', (req, res) => {
     })
   res.send(rtsGames);
 })
+
+//search testing
 
 
 module.exports = app

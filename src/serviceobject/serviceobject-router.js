@@ -29,6 +29,27 @@ serviceRouter
             })
             .catch(next)
     })
+    
+
+/*serviceRouter
+    .route('/vods')
+    .get((req, res, next) => {
+        const { search = '' } = req.query;
+        const knexInstance = req.app.get('db')
+        let videos;
+        Service.getAllVods(knexInstance)
+            .then(res => res.json)
+            .then(data => videos = data)
+            .catch(next) 
+        let results = videos
+            .filter(video =>
+                video
+                    .title
+                    .toLowerCase()
+                    .includes(search.toLowerCase()));
+        res.json(results);
+    })
+*/
 
 //use router to get all tags
 serviceRouter
@@ -42,4 +63,40 @@ serviceRouter
             .catch(next)
     })
 
+
+serviceRouter
+    .route('/vods/:game_id')
+    .all((req, res, next) => {
+        const knexInstance = req.app.get('db');
+
+        Service.getByGameId(knexInstance, req.params.game_id)
+                .then((game) => {
+                    res.json(game);
+                })
+                .catch(next)
+    })
+
+serviceRouter
+    .route('/vods/matchup/:matchup')
+    .get((req, res, next) => {
+        const knexInstance = req.app.get('db');
+
+        Service.getByMatchup(knexInstance, req.params.matchup)
+                .then((game) => {
+                    res.json(game);
+                })
+                .catch(next)
+    })
+
+serviceRouter
+    .route('/vods/view/:view')
+    .get((req, res, next) => {
+        const knexInstance = req.app.get('db');
+
+        Service.getByView(knexInstance, req.params.view)
+                .then((game) => {
+                    res.json(game);
+                })
+                .catch(next)
+    })
 module.exports = serviceRouter
