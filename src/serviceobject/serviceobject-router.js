@@ -31,26 +31,6 @@ serviceRouter
     })
     
 
-/*serviceRouter
-    .route('/vods')
-    .get((req, res, next) => {
-        const { search = '' } = req.query;
-        const knexInstance = req.app.get('db')
-        let videos;
-        Service.getAllVods(knexInstance)
-            .then(res => res.json)
-            .then(data => videos = data)
-            .catch(next) 
-        let results = videos
-            .filter(video =>
-                video
-                    .title
-                    .toLowerCase()
-                    .includes(search.toLowerCase()));
-        res.json(results);
-    })
-*/
-
 //use router to get all tags
 serviceRouter
     .route('/tags')

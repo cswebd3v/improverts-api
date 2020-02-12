@@ -46,7 +46,7 @@ app.get('/games', (req, res) => {
   res.send(rtsGames);
 })
 
-//search testing
+
 
 
 module.exports = app
