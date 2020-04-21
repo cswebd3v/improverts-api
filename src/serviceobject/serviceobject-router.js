@@ -6,6 +6,12 @@ const Service = require('./serviceobject-service');
 const serviceRouter = express.Router()
 const jsonParser = express.json()
 
+serviceRouter
+    .route('/')
+    .get((req, res) => {
+        res.send('Hello, world!')
+    })
+
 //use router get all games
 serviceRouter
     .route('/games')
