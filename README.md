@@ -1,26 +1,26 @@
-# Express Boilerplate!
+ImproveRTS is a video database for RTS gamers to improve their gameplay.
+https://improverts.now.sh/
 
-This is a boilerplate project used for starting new projects!
+![Preview](./src/images/irts.png)
 
-## How do set up?
+Users can select their game of choice, and then enter the video log for that game. Either browse all provided videos, or filter by "game matchup". The videos are hand selected with the intent of educating strategy.
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## Available Scripts
 
-## Scripts
+In the project directory, you can run:
 
-Start the application `npm start`
+### `npm start`
 
-Start nodemon for the application `npm run dev`
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Run the tests in watch mode `npm test`
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-## Deploying
+### `npm test`
 
-When your new project is ready for deployment, add a new heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
